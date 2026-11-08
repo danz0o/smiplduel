@@ -1,0 +1,40 @@
+name: SimpleDuels
+version: 1.3.0
+main: me.arsali.duels.Duels
+api-version: '1.21'
+author: Arsali
+description: Simple Minemen-style duels (kits, arenas, scoreboard, tab, wind charge reset)
+commands:
+  duel:
+    description: Challenge a player to a duel
+    usage: /duel [player] [kit]
+  spectate:
+    description: Spectate a duel
+    aliases: [spec]
+    usage: /spectate [player]
+  leave:
+    description: Leave a duel / spectating and go to lobby
+    usage: /leave
+  party:
+    description: Party system
+    aliases: [p]
+    usage: /party [create|invite|accept|leave|kick|disband|list|chat|ffa]
+  settings:
+    description: Open your settings
+    usage: /settings
+  kiteditor:
+    description: Rearrange your kit layouts
+    aliases: [ke]
+    usage: /kiteditor [save|reset|cancel]
+  setlobby:
+    description: Set the lobby spawn
+    permission: duels.admin
+  arena:
+    description: Manage arenas
+    permission: duels.admin
+  kit:
+    description: Manage kits
+    permission: duels.admin
+permissions:
+  duels.admin:
+    default: op
